@@ -143,7 +143,7 @@ def vaultScreen():
         vaultScreen()
 
     def removeEntry(input):
-        cursor.execute("DELETE FROM vault WHERE id = ?", (input))
+        cursor.execute("DELETE FROM vault WHERE id = ?", (input,))
         db.commit()
         vaultScreen()
 
